@@ -1,2 +1,12 @@
-package com.springframwork.sfgdi.services;public class SetterInjectedGreetingService {
+package com.springframwork.sfgdi.services;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SetterInjectedGreetingService implements GreetingService{
+
+    @Override
+    public String sayGreeting() {
+        return "Hello World - Setter";
+    }
 }
